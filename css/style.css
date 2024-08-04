@@ -26,3 +26,30 @@ body{
     color: #fdfdfd;
     border-radius: 1rem;
 }
+
+/*Form*/
+.form h3{
+    margin-bottom: 1rem;
+}
+.form-input-container{
+    display: flex;
+}
+/*input do form*/
+.form input{
+    padding: 0.8rem; 
+    border:none;  
+    /*para a barra de pesquisa ocupar maior parte do bloco*/
+    flex: 1; 
+    border-radius: 4px;
+}
+.form button{
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background: #74ebd5;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
