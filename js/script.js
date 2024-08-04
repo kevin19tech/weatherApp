@@ -1,5 +1,6 @@
 // Variáveis e seleção de elementos
 //API
+//POR QUESTÕES DE SEGURANÇA A API FOI APAGADA
 const apiCountryURL = "https://countryflagsapi.com/png/"
 
 const cityInput = document.querySelector("#city-input")
