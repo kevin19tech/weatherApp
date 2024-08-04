@@ -74,7 +74,11 @@ body{
 #weather-data span {
     margin: 0.6rem;
 }
-
+#description{
+    font-weight: bold;
+    /*primeira letra maíuscula*/
+    text-transform: capitalize;
+}
 #description-container{
     display: flex;
     justify-content: center;
@@ -88,7 +92,7 @@ body{
     align-items: center;
 }
 
-#details-container #umidity{
+#details-container #humidity{
     border-right: 1px solid #fff;
     margin: 0.6rem;
     padding: 0.6rem;
