@@ -1,0 +1,28 @@
+/*Geral*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu",sans-serif;
+}
+
+body{
+    /*180deg - vertical*/
+    background: linear-gradient(180deg, #acb6e5 0%,#74ebd5  100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*esconder algumas áreas*/
+.hide{
+    display: none;
+}
+
+.container{
+    background: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+}
