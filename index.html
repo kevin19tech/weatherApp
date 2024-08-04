@@ -14,6 +14,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h2>Clima agora</h2>
+    <div class="container">
+        <!-- Início Formulário-->
+        <div class="form">
+            <h3>Digite o nome da cidade para conferir o clima:</h3>
+            <!--Bloco da barra de pesquisa e botão-->
+            <div class="form-input-container">
+                <!--Barra de pesquisa-->
+                <input type="text" name="" id="city-input" placeholder="Digite o nome da cidade">
+                <!--Botão de pesquisa-->
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <!--Fim formulário
+        -->
+
+        <!--Dados da previsão do tempo-->
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <!--Como nome da cidade será dinâmico, será usado span-->
+                <span id="city">Maceió</span>
+                <img src="" alt="Bandeira do pais" id="country">
+            </h2>
+            <!--temperatura - dinâmico-->
+            <p id="temperature"><span>38</span>&deg;</p>
+            <!--Descrição-->
+            <div id="description-container">
+                <p id="description">Nublado</p>
+                <img src="" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <!--Detalhes-->
+            <div id="details-container">
+                <!--Umidade-->
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>48%</span>
+                </p>
+                <!--Vento-->
+                <p id="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>3km/h</span>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
