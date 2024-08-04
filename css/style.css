@@ -79,11 +79,22 @@ body{
     /*primeira letra maíuscula*/
     text-transform: capitalize;
 }
+#temperature{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+#weather-icon{
+    width: 90px;
+    height: 90px;
+}
 #description-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0.6rem 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.375rem;
+    /*margin: 0.6rem 0;*/
 }
 
 #details-container {

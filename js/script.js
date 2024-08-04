@@ -1,6 +1,6 @@
 // Variáveis e seleção de elementos
 //API
-const apiKey = "2be022fdc7751bc9ed945b76e2c730ba";
+/*const apiKey = "2be022fdc7751bc9ed945b76e2c730ba";*/
 const apiCountryURL = "https://countryflagsapi.com/png/"
 
 const cityInput = document.querySelector("#city-input")
@@ -13,6 +13,8 @@ const weatherIconElement = document.querySelector("#weather-icon")
 const countryElement = document.querySelector("#country")
 const humidityElement = document.querySelector("#humidity span")
 const windElement = document.querySelector("#wind span")
+
+const weatherContainer = document.querySelector("#weather-data")
 //Funções
 //Acessando a API
 const getWeatherData = async(city) => {
@@ -40,6 +42,9 @@ const showWeatherData = async(city) =>{
     humidityElement.innerText =`${data.main.humidity}%`
     //Vento
     windElement.innerText = `${data.wind.speed}km/h`
+
+    //Reexibir o container dos dados
+    weatherContainer.classList.remove("hide")
 }
 //Eventos
 //Click no botão de pesquisa
@@ -50,4 +55,13 @@ searchBtn.addEventListener("click",(e) =>{
     const city = cityInput.value;
 
     showWeatherData(city)
+})
+
+//Pesquisar com enter
+
+cityInput.addEventListener("keyup",(e) =>{
+    if(e.code === "Enter"){
+        const city = e.target.value
+        showWeatherData(city)
+    }
 })
